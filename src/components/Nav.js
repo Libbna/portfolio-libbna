@@ -3,7 +3,6 @@ import React from 'react';
 const Nav = ({Name, ProfilePic}) => {
   return (
     <>
-    {/****  Navigation ****/}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" >
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span className="d-block d-lg-none">{Name}</span>
