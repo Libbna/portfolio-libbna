@@ -7,16 +7,16 @@ import Interests from './_Interests';
 import Skills from './_Skills';
 
 
-const PageContent = ({Name}) => {
+const PageContent = ({Data}) => {
   return (
     <div className="container-fluid p-0">
-        <About />
+        <About {...Data.About} Name={Data.Name} Socials={Data.Socials} />
         <Experience />
         <Education />
         <Skills />
         <Interests />
         <Awards />
-    </div>
+        </div>
   );
 }
 

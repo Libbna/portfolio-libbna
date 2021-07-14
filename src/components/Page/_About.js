@@ -1,13 +1,13 @@
 import React from 'react';
 
-const About = ({Name}) => {
+const About = ({Name, Location, Phone, Email, Description, Socials}) => {
   return (
     <>
         <section className="resume-section" id="about">
                 <div className="resume-section-content">
                     <h1 className="mb-0">
-                        {Name}
-                        <span className="text-primary">Taylor</span>
+                        {Name.split(" ")[0]}
+                        <span class="text-primary"> {Name.split(" ")[1]}</span>
                     </h1>
                     <div className="subheading mb-5">
                         3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
