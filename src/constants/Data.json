@@ -6,7 +6,7 @@
       "Location": "New Delhi, Delhi, India",
       "Phone": "+91 886 093 7992",
       "Email": "libbna.mathew@gmail.com",
-      "Description": "MCA graduate - 2020 - Frontend Developer - HTML/CSS, JavaScript and ReactJS "
+      "Description": ["MCA Graduate - 2020 - Frontend Developer - HTML/CSS, JavaScript and ReactJS"]
     },
     "Education": [
       {
@@ -29,9 +29,8 @@
     ],
     
     "Socials": {
-      "LinkedIn": "linkedin.com/in/libbna-mathew-296b30192",
+      "LinkedIn": "https://www.linkedin.com/in/libbna-mathew-296b30192/",
       "Instagram": "https://www.instagram.com/libbna.mathew/",
-      "Twitter": "https://twitter.com/17sushmita",
       "GitHub": "https://github.com/Libbna"
     },
     "Skills": {

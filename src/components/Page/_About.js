@@ -1,5 +1,11 @@
 import React from 'react';
 
+
+const SocialIconMap = {
+    LinkedIn: "fa-linkedin-in",
+    Instagram: "fa-instagram",
+    GitHub: "fa-github"
+}
 const About = ({Name, Location, Phone, Email, Description, Socials}) => {
   return (
     <>
@@ -10,15 +16,18 @@ const About = ({Name, Location, Phone, Email, Description, Socials}) => {
                         <span class="text-primary"> {Name.split(" ")[1]}</span>
                     </h1>
                     <div className="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                        {Location} · {Phone} · 
+                        <a href={"mailto:" + Email}> {Email} </a>
                     </div>
-                    <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p className="lead mb-5"> {Description} </p>
                     <div className="social-icons">
-                        <a className="social-icon" href="#!"><i className="fab fa-linkedin-in"></i></a>
-                        <a className="social-icon" href="#!"><i className="fab fa-github"></i></a>
-                        <a className="social-icon" href="#!"><i className="fab fa-twitter"></i></a>
-                        <a className="social-icon" href="#!"><i className="fab fa-facebook-f"></i></a>
+                        {Object.keys(Socials).map(social =>
+                        Socials[social] && (
+                            <a className="social-icon" href={Socials[social]} key={social}>
+                                <i className={"fab " + SocialIconMap[social]}></i>
+                            </a>
+                        ))}     
+                   
                     </div>
                 </div>
             </section>
